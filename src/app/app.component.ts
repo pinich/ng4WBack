@@ -9,13 +9,16 @@ import { SrvMyService } from "./services/srv-my.service";
   providers: [SrvMyService]
 })
 export class AppComponent {
-  title = 'app works!';
+  title:String = 'app works!';
   constructor(private srvc:SrvMyService){
 
   }
   public addData(){
-    let tmpText:String = "Title with date: " + Date(); 
-    this.srvc.addData(this.title ,tmpText);
-    this.title='';
+    if(this.title !== ''){
+      let ddd = new Date().toLocaleString('CA');
+      let tmpText:String = "Title with date: " + ddd; 
+      this.srvc.addData(this.title ,tmpText);
+      this.title='';
+    }
   }
 }

@@ -1,0 +1,12 @@
+.pName{
+    font-weight: 600;
+    font-size: large;
+}
+
+.pTitle{
+    font-size: small;
+    color: darkgray;
+}
+li {
+    background-color: #effbff;
+}
