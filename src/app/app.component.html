@@ -1,3 +1,9 @@
 <h1>
   {{title}}
 </h1>
+<h3>app-cmp-my</h3>
+<label>Enter Text for the first parameter:</label><input (keydown.enter)="addData()" [(ngModel)]="title" type="text" />
+<button (click)="addData()">Click it !</button>
+<hr />
+<app-cmp-my></app-cmp-my>
+<hr/>

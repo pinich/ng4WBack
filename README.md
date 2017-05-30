@@ -1,5 +1,8 @@
 # Ng4WBack
 
+1. Must run `ng build --prod` before serving with nodejs
+1. To serve it from node use `node server` it will serve on port 3000.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.6.
 
 ## Development server

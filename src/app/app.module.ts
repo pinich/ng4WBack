@@ -4,10 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { CmpMyComponent } from './components/cmp-my/cmp-my.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CmpMyComponent
   ],
   imports: [
     BrowserModule,
