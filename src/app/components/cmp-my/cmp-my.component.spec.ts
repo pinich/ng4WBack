@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CmpMyComponent } from './cmp-my.component';
+import { SrvMyService } from '../../services/srv-my.service';
 
 describe('CmpMyComponent', () => {
   let component: CmpMyComponent;
@@ -8,7 +9,8 @@ describe('CmpMyComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CmpMyComponent ]
+      declarations: [ CmpMyComponent ],
+      providers: [SrvMyService]
     })
     .compileComponents();
   }));

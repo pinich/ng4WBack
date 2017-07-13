@@ -1,13 +1,19 @@
 import { TestBed, async } from '@angular/core/testing';
 
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
+import { NoopAnimationsModule } from "@angular/platform-browser/animations";
+import { ngMaterialModule } from "app/module/ngMaterial.module";
+import { SrvMyService } from "app/services/srv-my.service";
+import { CmpMyComponent } from "app/components/cmp-my/cmp-my.component";
+
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [
-        AppComponent
-      ],
+      imports:[FormsModule , ngMaterialModule , NoopAnimationsModule],
+      declarations: [AppComponent ,CmpMyComponent],
+      providers: [SrvMyService]
     }).compileComponents();
   }));
 
