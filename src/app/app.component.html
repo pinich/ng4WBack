@@ -5,10 +5,7 @@
 <md-input-container class="example-full-width">
   <input mdInput required placeholder="Enter Text for the first parameter:" (keydown.enter)="addData()" [(ngModel)]="title" type="text" />
 </md-input-container>
-<button md-raised-button *ngIf="title !== ''" (click)="addData()">Click it !</button>
+<button *ngIf="title !== ''" (click)="addData()" md-fab><md-icon>check</md-icon></button>
 <hr />
-<md-input-container floatPlaceholder="auto|always|never">
-    <input mdInput required type="text" placeholder="stuff">
-</md-input-container>
 <app-cmp-my></app-cmp-my>
 <hr/>

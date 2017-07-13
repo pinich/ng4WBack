@@ -1,12 +1,20 @@
 <p>
   cmp-my works!
 </p>
-<ol>
+<!-- <ol>
   <li *ngFor="let elm of data">
     <span class="pName">{{elm.name}}</span> <span class="pTitle">{{elm.title}}</span>
   </li>
-</ol>
- <!-- <div class="example-container">
+</ol> -->
+<div class='cotainer'>
+  <md-card *ngFor="let elm of data">
+    <md-card-content>
+      <md-card-title>{{elm.name}}</md-card-title>
+      <md-card-subtitle>{{elm.title}}</md-card-subtitle>
+    </md-card-content>
+  </md-card>
+</div>
+<!-- <div class="example-container">
   <h3>Normal Buttons</h3>
   <div class="button-row">
     <button md-button>Flat button</button>
