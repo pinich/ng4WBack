@@ -8,4 +8,8 @@ export class Ng4WBackPage {
   getParagraphText() {
     return element(by.css('app-root h1')).getText();
   }
+
+  getMyComponentParagrapthText(){
+    return element(by.css('app-cmp-my p')).getText();
+  }
 }
