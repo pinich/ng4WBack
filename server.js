@@ -4,7 +4,7 @@ const path = require('path');
 
 const api = require('./server/routes/api');
 
-const port = 3000;
+const port = process.env.PORT;
 
 const app = express();
 
@@ -20,6 +20,6 @@ app.get('*',(req,res)=>{
     res.sendFile(path.join('dist/index.html'));
 });
 
-app.listen(port , () => {
+app.listen(port ,process.env.IP,() => {
     console.log("Server Running on localhost:" + port);
 })

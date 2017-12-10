@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import 'hammerjs';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
-import { ngMaterialModule } from './module/ngMaterial.module';
+//import { ngMaterialModule } from './module/ngMaterial.module';
 
 import { AppComponent } from './app.component';
 import { CmpMyComponent } from './components/cmp-my/cmp-my.component';
@@ -17,7 +17,6 @@ import { CmpMyComponent } from './components/cmp-my/cmp-my.component';
   imports: [
     BrowserModule,
     NoopAnimationsModule,
-    ngMaterialModule,
     FormsModule,
     HttpModule
   ],
